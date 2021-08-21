@@ -61,9 +61,22 @@ Name = Value
 ```
 - names can also be bound via the import statements
 - " = " symbol is assignment operator
+- Abstraction allows for us to refer to the result of operations
+- Environments act as the memory for interpreters to store what values were bound to what names. 
+- Names can also be bound to function. 
+- Successive statements can rebind that name to a new value or function 
+- Variable names can be bound to different value as a result of executing a program. 
+- 
+
+
 ``` 
-- from "libary" import "module"
+- 
 ```
+
+- This allows for   
+
+
+
 
 
 ***1.2.5***
