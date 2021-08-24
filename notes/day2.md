@@ -35,7 +35,7 @@ but it should be understandable
 ***1.2.3***
 - 
 
-**Importing Libary Functions**
+**Importing Library Functions**
 ``` 
 from "libary" import "module"
 ```
