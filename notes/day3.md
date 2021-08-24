@@ -148,12 +148,71 @@ result = sum_squares(5, 12)
 ######Aspects of a functional abstraction
 
 - 3 core components of functional abstraction (E.g. Square functions used for sum_square)
-  - Domain: is any single real number
-  - Range: is any non-negative real number
-  - intent: is that the output is the square of the input 
+  - Domain(set of arguments it can take): is any single real number
+  - Range(set of values it can return): is any non-negative real number
+  - intent(: is that the output is the square of the input 
 
 ###1.3.7
 ***Operators***
 
-- 
+- Mathematical operators provided our first example of a method of combination
+- Python expressions, with infix operators each have their own evaluation procedures, but it can be thought of as a short-hand call expression
+``` 
+2+3  
+>>> 5
+```
+could be thought of 
+``` 
+add(2,3)
+>> 5
+```
+
+Another example: 
+``` 
+2+3*4+5 
+>>> 19
+```
+equals
+``` 
+add(add(2, mul(3,4)),5)
+>>> 19 
+```
+
+- For division, Python has 2 infix operators:
+  - "/" : normal division
+  - Shorthand version
+    - truediv(x,y)
+``` 
+  > 5/4
+1.25
+  > 8/4
+2.0
+  > truediv(5/4)
+1.25
+  
+```
+  - "//": rounds down the to an integer:
+  - Shorthand  version 
+    - floordiv(x,y))
+``` 
+ > 5 / / 4
+1
+ > -5 / /4
+-2
+  > floordiv(5,4)
+1
+```
+
+Two operators are shorthanded for 
+- truediv
+
+
+
+
+
+
+
+
+
+
 
