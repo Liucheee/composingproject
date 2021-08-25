@@ -43,14 +43,43 @@
 ***Default Argument Values***
 - 
 
+- Consequence of general functions is the additional arguments
+- Default values of arguments can be provided but is optional
+- If values are not provided then it is bound to formal parameter name
 
+``` 
+>>> def pressure(v, t, n=6.022e23):
+        """Compute the pressure in pascals of an ideal gas.
 
+        v -- volume of gas, in cubic meters
+        t -- absolute temperature in degrees kelvin
+        n -- particles of gas (default: one mole)
+        """
+        k = 1.38e-23  # Boltzmann's constant
+        return n * k * t / v
 
+```
+in practice:
 
+``` 
+>>> pressure(1, 273.15)
+2269.974834
+>>> pressure(1, 273.15, 3 * 6.022e23)
+6809.924502
 
+```
+- the "=" symbol has 2 different meaning. Depending on context
+  - In the def statement it indicates a default value when pressure is used
+  - It is used as an assignment statement to bind K in the body 
 
+- In the pressure function 3 are defined but only 2 are provided in first call
+- This is an example of when the default value would be used
+- However, if a third is provided then the default is ignored
 
+#### Guideline Convention 
 
+- Data values used in the function body should be expressed as default values to named arguments 
+- Fundamental constants can be bound in the function body or in the global frame
 
 
 
