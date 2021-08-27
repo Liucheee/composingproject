@@ -20,9 +20,9 @@ def print_square(x):
     print(square(x))
 
 # Sometimes it makes sense for non-pure functions
-#
 
 
+###1.5.2
 
 
 
