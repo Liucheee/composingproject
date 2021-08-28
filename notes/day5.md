@@ -32,10 +32,23 @@
 - Python is a sequence of statements 
 - Header with indented statements is a clause
 - Compound statements have one or more clauses
-- 
 
+``` 
+<header>
+    <Statement>
+    <Statement>
+    ...
+<seperating header>
+    <Statement>
+    <Statement>
+    ...
+...
+```
 
-
+- Simple statements = Expression,return and assignment statements 
+- Compound statement = Def statements because there is a clause. Def statements acts as a header.
+- Special rules for headers, dictate when and if they are executed. 
+- Specialised evaluation rules 
 
 
 
