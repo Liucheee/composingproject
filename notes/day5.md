@@ -48,13 +48,21 @@
 - Simple statements = Expression,return and assignment statements 
 - Compound statement = Def statements because there is a clause. Def statements acts as a header.
 - Special rules for headers, dictate when and if they are executed. 
-- Specialised evaluation rules 
+- Specialised evaluation rules dictate when and if the statements are executed
+- Execution works via the first statement executing and then the following statements.
+- As a result some later statements may not be reached because of redirect control which would mean they won't execute.
 
+####Practical note
 
+- Use the same amount of spaces when indenting otherwise python will throw error messages. 
 
+###1.5.3
 
+***Defining Functions II: Local Assignment***
+-
 
-
+- Originally, we stated that the body of a user-defined
+- 
 
 
 
