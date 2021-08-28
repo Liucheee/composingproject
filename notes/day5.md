@@ -62,7 +62,7 @@
 -
 
 - Originally, we stated that the body of a user-defined
-- 
+- Functions can define a sequence of operations that extend 
 
 
 
