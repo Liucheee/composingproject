@@ -29,6 +29,10 @@
 ***Compound Statements***
 -
 
+- Python is a sequence of statements 
+- Header with indented statements is a clause
+- Compound statements have one or more clauses
+- 
 
 
 
