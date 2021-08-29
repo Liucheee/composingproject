@@ -26,7 +26,12 @@ def print_square(x):
 # Sometimes it makes sense for non-pure functions
 
 
-###1.5.2
+###1.5.3
+
+def percent_difference(x, y):
+    difference = abs(x-y)
+    return 100 * difference / x
+result = percent_difference(40, 50)
 
 
 

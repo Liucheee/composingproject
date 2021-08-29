@@ -62,7 +62,33 @@
 -
 
 - Originally, we stated that the body of a user-defined
-- Functions can define a sequence of operations that extend 
+- Functions can define a sequence of operations that extend a single expression
+- When User-defined functions are applied, a local frame is created by calling that function
+- A return redirects control: Process of function terminates whenever the first return is executed and that value is returned
+- Assignment statement can appear within a function body
+
+``` 
+def percent_difference(x, y):
+    difference = abs(x-y)
+    return 100 * difference / x
+result = percent_difference(40, 50)
+
+```
+
+- Effect of an Assignment statement is to bind name to value in the first frame
+- Assignment statements within a function body cannot affect the global frame
+- Functions can only manipulate their local is critical to creating modular programs
+- Modular programs can be better to simplify expressions.
+
+E.g. 
+``` 
+>>> def percent_difference(x, y):
+        return 100 * abs(x-y) / x
+>>> percent_difference(40, 50)
+25.0
+```
+- Local Assignment increase expressive power of function definitions 
+
 
 
 
