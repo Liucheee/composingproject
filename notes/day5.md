@@ -97,22 +97,68 @@ E.g.
 - Absolute values cna be computed with "abs(x)"
 - Conditional statements cna be used to manually implement this
 - E.g. Return a certain number if positive or another value if negative
+
+
+**Conditional Statements:** A series of headers and suites: a required if clause, an optional Sequence of elif clauses, and finally an optional else clause:
+
+```
+if <expression>:
+    <suite>
+elif <expression>:
+    <suite>
+else:
+    <suite>
+```  
+
+- Conditional statements are considered in order.
+- Evaluate the header expression
+- If true then execute the suite otherwise skip over the subsequent clauses 
+- if the else clause is reached (if and elif expression evaluate to false) then it is executed.
+
+***Boolean contexts***
+- The expression inside the header statements of conditional blocks are boolean contexts.
+- This truth value matters to control flow otherwise those values aren't assigned or returned.
+
+***Boolean Values***
+- Boolean values can be true or false
+- built in operations can return these true or false values
+- Greater or equal to value can also return these values
+
+***Boolean operators***
+``` 
+True and False
+    False
+True or False
+    True
+not False
+    True
+```
+
+- Logical expressions have corresponding evaluation procedures
+- Short-circuiting: This exploits the fact that the truth value of a logical expression without evaluating all of its subexpressions
+
+<"left"> ***and*** <"right">
+1) Evaluate the subexpression <"left">
+2) If result is a false value v, then the expression evaluates to v
+3) Otherwise, the expression evaluates to the value of the subexpression<"right"> 
+
+<"left"> ***or*** <"right">
+1) Evaluate the subexpression<"left">
+2) If the result is a true value, then the expression evaluates to v
+3) Otherwise, the expression evaluates to the value of the subexpression<"right"> 
+
+***not*** <"exp">
+1) Evaluate <"exp">; The value is true uf the result is a false value and false otherwise
+
+- These values,rules and operators provide us with a way to combine the results of comparisons.
+- Functions that perform comparisons and return boolean values typically begin with "is" not followed by an underscore(E.g. isfinite,isdigit)
+
+###1.5.5
+
+***Iteration***
+-
+
 - 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
