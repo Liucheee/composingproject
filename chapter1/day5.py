@@ -34,6 +34,18 @@ def percent_difference(x, y):
 result = percent_difference(40, 50)
 
 
+###1.5.4
+
+def absolute_value(x):
+"""Compute abs(x)."""
+if x > 0:
+    return x
+elif x == 0:
+    return 0
+else:
+    return -x
+
+result = absolute_value(-2)
 
 
 

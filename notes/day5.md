@@ -89,8 +89,15 @@ E.g.
 ```
 - Local Assignment increase expressive power of function definitions 
 
+###1.5.4
 
+***Conditional Statements***
+-
 
+- Absolute values cna be computed with "abs(x)"
+- Conditional statements cna be used to manually implement this
+- E.g. Return a certain number if positive or another value if negative
+- 
 
 
 
