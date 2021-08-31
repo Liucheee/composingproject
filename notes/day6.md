@@ -31,7 +31,9 @@
 ***Functions as General Methods***
 - 
 
-- Functions 
+- Golden ratio  is often called phi which is a number which is near 1.6
+- Iterative improvement algorithm begins with a guess of an equation 
+- 
 
 
 
