@@ -31,7 +31,7 @@
 ***Functions as General Methods***
 - 
 
-- 
+- Functions 
 
 
 
