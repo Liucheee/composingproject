@@ -72,7 +72,7 @@
 - They don't get evaluated until sqrt is called
 
 **Lexical scope**
-
+- Locally defined functions have access to name bindings in the scope they are defined.
 
 
 
