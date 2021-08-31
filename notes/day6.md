@@ -62,9 +62,16 @@
 ***Defining functions 3: Nested Definitions***
 - 
 
+- Nested functions solve the problem of global functions becoming cluttered with smaller functions and the constraint of particular function signatures
 
+**2 arguments**
+- This calculation for square roots wouldn't work with the improve function from 1.6.2 because it has 2 arguments
+- This issue can be resolved by simply nesting one function definition inside the body of the other
+- local def statements only affect the current local frame
+- These functions are only in scope while sqrt is being evaluated
+- They don't get evaluated until sqrt is called
 
-
+**Lexical scope**
 
 
 
