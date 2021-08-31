@@ -81,6 +81,7 @@ pi_sum(1e6)
 
 ###1.6.2
 
+#Golden Ratio
 def improve(update, close, guess=1):
     while note close(guess):
         guess = update(guess)
@@ -105,15 +106,18 @@ def improve(update, close, guess=1):
         guess = update(guess)
     return guess
 
+#Improve
 def golden_update(guess):
     return 1/guess + 1
 
 def square_close_to_successor(guess):
     return approx_eq(guess * guess, guess + 1)
 
+#Approx_eq
 def approx_eq(x, y, tolerance=1e-3):
     return abs(x - y) < tolerance
 
+#Improve
 phi = improve(golden_update, square_close_to_successor)
 
 #Maths Example
