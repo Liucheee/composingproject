@@ -158,7 +158,76 @@ not False
 ***Iteration***
 -
 
-- Control statements 
+- Iterative Control statements can be used to express repetition of the same statements
+
+E.g. fibonacci sequence 
+- This is constructed via repeatedly applying the sum of previous 2 values rule
+- A While statement can be used to enumerate N Fibonacci numbers
+- In the example the binding statement of previous and current values works because the right-hand side of the = sign is evaluated before the left 
+
+- While clauses contain header expression followed by suites:
+```
+while<expression>:
+    <suite>
+```
+- To prevent an infinite loop the while loop should change some binding in each pass
+- <"control"> + C to force python to stop looping
+
+###1.5.5
+
+***Testing***
+- 
+
+- Testing is to ensure that the behaviour matches the expectation
+
+***Assertions***
+- "Assert" statements are used to verify the expected outcome 
+- The expression displays a quoted line of text if the outcome is determined to be false boolean value
+
+``` 
+assert <statement>, 'printed if statement is false'
+```
+- There is no statement printed if the statement returns a true value
+- Test are normally written in the same file or a neighbouring file with the suffix _test.py
+- Generally the tests would have several arguments including extreme test cases
+
+***Doctests***
+- First lines of docstrings should contain a one liner describing the function followed by a blank line
+- Detailed description of arguments and behaviour may follow.
+- The doctest module can be used to verify an interaction in the global environment
+``` 
+>>>from doctest import testmod
+>>>testmod()
+Testresults(failed=0, attmped = 2) 
+```
+
+- Verifying doctest insertions for only a single function uses the "run_docstring_examples"
+- Its first argument is the function to test 
+- The second should be the result of the expression globals() which is a built-in function that returns the global environment
+- The third argument is true to indicate that we would like a catalog of all tests run
+- A mismatch in result and expected result will report this problem as a test failure.
+- All doctests in a file can be run by starting python with doctest command line
+``` 
+python3 -m doctest <python_source_file> 
+```
+- It is good practice writing in testing after implementing new functions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
