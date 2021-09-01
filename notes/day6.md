@@ -73,9 +73,15 @@
 
 **Lexical scope**
 - Locally defined functions have access to name bindings in the scope they are defined.
+- Sharing names among nested definitions is called lexical scoping 
+- Inner functions have access to the names in environment where they are defined(not where they are called)
+- Each user-defined function has a parent environment: The one where it was defined
+- When they are called, its local frame extends past its parent's environment 
 
 
 
+**Sqrt**
+- 
 
 
 
