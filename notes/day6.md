@@ -81,9 +81,13 @@
 
 
 **Sqrt**
-- 
+- Parent of a function value is the first frame of the environment where it was defined
+- Functions without parent annotations were defined in the global environment.
+- User-defined functions create a frame which share the same parent as the function 
 
-
+**Extended Environments**
+- Arbitrarily long chain of frames which ends with global frame
+- Calling functions that are nested 
 
 
 
