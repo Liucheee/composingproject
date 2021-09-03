@@ -87,9 +87,19 @@
 
 **Extended Environments**
 - Arbitrarily long chain of frames which ends with global frame
-- Calling functions that are nested 
+- Longer chains can be made by calling functions that are defined in other functions and nested via def statements
+- E.g. The Sqrt_update function has 3 frames (The one where it is defined, sqrt frame and the global)
 
+**Benefits**
+- Local function names don't interfere with names external functions because the name is bound to the current local frame where it was defined
+- Local function can access the environment of the enclosing function because the body is evaluated in an enviroment that extends the evaluation enviroment which it was defined.
 
+###1.6.4
+
+***Functions as Returned Values***
+- 
+
+- 
 
 
 
