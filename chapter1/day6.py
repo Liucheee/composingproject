@@ -162,7 +162,9 @@ def improve(update, close, guess=1):
 def approx_eq(x, y, tolerance=1e-3):
     return abs(x - y) < tolerance
 
+#F2
 def sqrt(a):
+    #F3
     def sqrt_update(x):
         return average(x, a/x)
     def sqrt_close(x):
