@@ -99,11 +99,19 @@
 ***Functions as Returned Values***
 - 
 
+- Functions can be created so that the returned value is a function itself
+
+**Example**
+- The example shows the values for "f" and "g" are both resolved correctly with conflicting names present in the global frame 
+- The results of square and successor are loaded via f and g into compose1
+
+
+###1.6.5
+
+***Functions as Returned Values***
 - 
 
-
-
-
+- 
 
 
 
