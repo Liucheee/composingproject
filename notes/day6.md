@@ -108,13 +108,17 @@
 
 ###1.6.5
 
-***Functions as Returned Values***
+***Example: Newton's Method***
 - 
 
-- 
+**Newton_update**
+- Shows the computational process of following tangent to 0
+
+**find_zero**
+- This can be defined in terms of "newton_update" and "improve" and a comparison to see if near 0
 
 
-
+**Computing Roots**
 
 
 

@@ -205,6 +205,43 @@ def compose1(f,g):
 square_succesor = compose1(square, successor)
 result = square_succesor(12)
 
+###1.6.5
+
+#Newton_update
+
+def newton_update(f, df):
+    def update(x):
+        return x - f(x) / df(x)
+    return update
+
+#find_zero
+def find_zero(f, df):
+    def near_zero(x):
+        return approx_eq(f(x), 0)
+    return improve(newton_update(f, df), near_zero)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
