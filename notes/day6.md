@@ -119,7 +119,7 @@
 
 
 **Computing Roots**
-
+- This method can be used to compute 
 
 
 
