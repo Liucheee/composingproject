@@ -124,5 +124,12 @@
 - Third root of 64 is 4
 - Sixth root of 64 is 2
 
+- The approximation error can be reduced via changing the tolerance in approx_eq to be smaller
+- It may not always converge
+- The initial guess must be sufficiently close to the zero and several other conditions must be met
 
 
+###1.6.6
+
+***Currying***
+- 
