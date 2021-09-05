@@ -222,12 +222,39 @@ def find_zero(f, df):
 
 
 
+#Square_root_Newton
+def square_root_newton(a):
+    def f(x):
+        return x * x - a
+    def df(x):
+        return 2 * x
+    return find_zero(f, df)
 
+>> square_root_newton(64)
+8.0
 
+def power(x, n):
+    """Return x * x * x *.......* x for x repeated n times"""
+    product, k = 1,0
+    while k < n:
+        product, k = product * x, k + 1
+    return product
 
+def nth_root_of_a(n, a):
+    def f(x):
+        return power(x, n) - a
+    def df(x):
+        return n * power(x, n-1)
+    return find_zero(f, df)
 
+>>> nth_root_of_a(2, 64)
+8.0
 
+>>> nth_root_of_a(3, 64)
+4.0
 
+>>> nth_root_of_a(6, 64)
+2.0
 
 
 

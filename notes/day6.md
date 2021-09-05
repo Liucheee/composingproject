@@ -119,7 +119,10 @@
 
 
 **Computing Roots**
-- This method can be used to compute 
+- This method can be used to compute roots of arbitrary degree n
+- Second root of 64 is 8
+- Third root of 64 is 4
+- Sixth root of 64 is 2
 
 
 
