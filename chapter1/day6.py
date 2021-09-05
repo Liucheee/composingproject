@@ -258,6 +258,13 @@ def nth_root_of_a(n, a):
 
 ###1.6.6
 
+def curried_pow(x):
+    def h(y):
+        return pow(x, y)
+    return h
+
+>>> curried_pow(2)(3)
+8
 
 
 
