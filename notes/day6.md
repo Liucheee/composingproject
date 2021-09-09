@@ -196,9 +196,14 @@ def uncurry2(g):
 - When g is applied to an argument x, it returns a single-argument function h
 - When h is applied to y, it calls f(x, y). Thus curry2(f)(x)(y) is equivalent to f(x, y)
 - uncurry2 reverses the currying transformation so that uncurry2(curry2(f)) equals f
+
+
+###1.6.7
+
+***Lambda Expressions***
 - 
 
-
+- 
 
 
 

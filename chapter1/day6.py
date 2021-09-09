@@ -256,6 +256,10 @@ def nth_root_of_a(n, a):
 >>> nth_root_of_a(6, 64)
 2.0
 
+
+
+
+
 ###1.6.6
 
 def curried_pow(x):
@@ -300,6 +304,17 @@ def uncurry2(g):
 
 >>> uncurry2(pow_curried)(2, 5)
 32
+
+
+
+
+
+
+###1.6.7
+
+
+
+
 
 
 
