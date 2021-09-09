@@ -134,6 +134,8 @@
 ***Currying***
 - 
 
+- 
+
 - Higher-order functions can convert a function that takes multiple arguments into chain of function that takes a single argument
 - function f(x, y) can be defined into a single function g so that g(x)(y) is equivalent to f(x, y)
 - g is a higher- order function that takes a single argument x and returns another function that takes in single argument y. This is called currying
@@ -211,12 +213,8 @@ def uncurry2(g):
 
 
 
-
-
-
-
-
-
+Defining: adding word into dictionary
+calling: copying that into book
 
 
 

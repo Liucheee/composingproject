@@ -261,14 +261,14 @@ def nth_root_of_a(n, a):
 
 
 ###1.6.6
-
+from math import pow
 def curried_pow(x):
     def h(y):
         return pow(x, y)
     return h
+curried_pow(2)
 
->>> curried_pow(2)(3)
-8
+
 
 def map_to_range( start, end, f):
     while start < end:
