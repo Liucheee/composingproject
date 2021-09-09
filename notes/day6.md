@@ -137,6 +137,75 @@
 - Higher-order functions can convert a function that takes multiple arguments into chain of function that takes a single argument
 - function f(x, y) can be defined into a single function g so that g(x)(y) is equivalent to f(x, y)
 - g is a higher- order function that takes a single argument x and returns another function that takes in single argument y. This is called currying
+- Some programming like Haskell, only allow functions a few single arguments, so they must curry all multi-argument procedures
+- Currying is useful when functions that only take a single argument is required
+- This can be seen in implementing the pattern in a function
+- map_to_range and curried_pow to compute the first 10 powers of two rather than specifically being required to write a function to do so:
+``` 
+map_to_range(0, 10,curried_pow(2))
+# 1
+# 2
+# 4
+# 8
+# 16
+# 32
+# 64
+# 128
+# 256
+# 512 
+
+```
+- The same 2 functions can also be used to compute powers of other numbers
+- Currying allows us to do it without writing specific functions for each number we wish to compute
+- This example allows us to manually perform the currying transformation on the pow function to obtain curred_pow
+- Functions can be defined to automate currying as well as inverse currying transformation:
+``` 
+def curry2(f):
+    """ Retrun a curreid version of the given two-argument function."""
+    def g(x):
+        def h(y):
+            return f(x, y)
+        return h
+    return g
+    
+def uncurry2(g):
+    """Return a two-argument version of the given curred function."""
+    def f(x, y):
+        return g(x)(y)
+    return f
+    
+>>> pow_curried = curry2(pow)
+>>> pow_curried(2)(5)
+32 
+ 
+>>> map_to_range(0, 10, pow_curried(2))
+# 1
+# 2
+# 4
+# 8
+# 16
+# 32
+# 64
+# 128
+# 256
+# 512 
+
+```
+
+- curry2 function takes in two-argument function f and returns a single- argument function g
+- 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

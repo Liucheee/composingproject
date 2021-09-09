@@ -266,11 +266,40 @@ def curried_pow(x):
 >>> curried_pow(2)(3)
 8
 
+def map_to_range( start, end, f):
+    while start < end:
+        print(f(start))
+        start = start + 1
+
+
+def curry2(f):
+    """ Retrun a curreid version of the given two-argument function."""
+
+    def g(x):
+        def h(y):
+            return f(x, y)
+
+        return h
+
+    return g
+
+
+def uncurry2(g):
+    """Return a two-argument version of the given curred function."""
+
+    def f(x, y):
+        return g(x)(y)
+
+    return f
+
+>>> pow_curried = curry2(pow)
+>>> pow_curried(2)(5)
+32
 
 
 
-
-
+>>> uncurry2(pow_curried)(2, 5)
+32
 
 
 
