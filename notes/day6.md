@@ -134,6 +134,9 @@
 ***Currying***
 - 
 
+- Function definition is returned 
+- Function no brackets is a definition but with brackets is a call 
+- curried_pow returns definition of h 
 - 
 
 - Higher-order functions can convert a function that takes multiple arguments into chain of function that takes a single argument
