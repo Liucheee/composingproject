@@ -1,7 +1,24 @@
 def curried_pow(x):
-    def h(y):
-        return pow(x, y)
-    return print
+    def h():
+        print("yes")
 
-print(curried_pow(2))
-curried_pow(2)(3)
+    return h
+
+
+curried_pow(2)
+curried_pow(27)()
+
+
+# fucntion that adds 5 values curried
+
+def addition(a, b, c, d, e) -> int:
+    return sum(a + b + c + d + e)
+
+
+addition(1, 2, 3, 4, 5)
+
+
+#Curried function
+
+
+
