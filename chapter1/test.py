@@ -20,18 +20,18 @@ addition(1, 2, 3, 4, 5)
 
 #Curried 5 variable function
 
-def f(a):
+def multiple(a):
     def g(b):
         def h(c):
             def i(d):
                 def j(e):
-                    print (a, b, c, d, e)
+                    print(a, b, c, d, e)
                 return j
             return i
         return h
-    return  g
+    return g
 
-f(1)(2)(3)(4)(5)
+multiple(1)(2)(3)(4)(5)
 
 
 
