@@ -18,7 +18,20 @@ def addition(a, b, c, d, e) -> int:
 addition(1, 2, 3, 4, 5)
 
 
-#Curried function
+#Curried 5 variable function
+
+def f(a):
+    def g(b):
+        def h(c):
+            def i(d):
+                def j(e):
+                    print (a, b, c, d, e)
+                return j
+            return i
+        return h
+    return  g
+
+f(1)(2)(3)(4)(5)
 
 
 
