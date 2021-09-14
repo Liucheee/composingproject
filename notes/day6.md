@@ -216,9 +216,6 @@ def uncurry2(g):
 
 
 
-Defining: adding word into dictionary
-calling: copying that into book
-
 
 
 
