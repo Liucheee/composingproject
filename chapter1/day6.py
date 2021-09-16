@@ -311,7 +311,11 @@ def uncurry2(g):
 def compose(f, g)
     return lambda x: f(g(x))
 
-
+#Example 1
+>>>s = lambda x: x * x
+s
+<function <lambda> at 0xf3f490>
+>>> s(12)
 
 
 
