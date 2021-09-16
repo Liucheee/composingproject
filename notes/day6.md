@@ -208,9 +208,14 @@ def uncurry2(g):
 ***Lambda Expressions***
 - 
 
-- 
+- Lambda expressions can be used on the fly to evaluate unnamed functions
+- They evaluate functions that has a single return expression as its body
+- Assignment and control statements are not allowed 
 
-
+``` 
+lambda                 X            :             f(g(x))
+"A function that     takes x      and returns     f(g(x))
+```
 
 
 

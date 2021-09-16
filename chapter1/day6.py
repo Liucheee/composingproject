@@ -307,10 +307,9 @@ def uncurry2(g):
 
 
 
-
-
-
 ###1.6.7
+def compose(f, g)
+    return lambda x: f(g(x))
 
 
 
