@@ -214,7 +214,7 @@ def uncurry2(g):
 
 ``` 
 lambda                 X            :             f(g(x))
-"A function that     takes x      and returns     f(g(x))
+A function that     takes x      and returns     f(g(x))
 ```
 
 
