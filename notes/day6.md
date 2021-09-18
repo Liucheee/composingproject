@@ -217,10 +217,14 @@ lambda                 X            :             f(g(x))
 A function that     takes x      and returns     f(g(x))
 ```
 
+- In general Python prefers explicit def statements compared to lambda expression
+- Style rules are only a guideline but code that is easy to read 
 
 
+###1.6.8
 
-
+***Abstractions and First-Class Functions***
+- 
 
 
 
