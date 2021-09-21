@@ -226,10 +226,20 @@ A function that     takes x      and returns     f(g(x))
 ***Abstractions and First-Class Functions***
 - 
 
+- Abstraction is a tool that should be used selectively when appropriate to generalise underlying abstractions to create more powerful abstractions
 
+First-Class elements
+- May be bound to names
+- May be passed as arguments to functions
+- may be returned as the results of functions
+- may be included in data structures
 
+- E.g. Functions are full First-class status 
 
+###1.6.9
 
+***Function Decorators***
+- 
 
 
 

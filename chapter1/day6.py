@@ -326,9 +326,11 @@ f = compose1(lambda x: x * x,
              lambda y: y + 1)
 result = f(12)
 
-###1.6.8
+###1.6.9
 
-
+def trace(fn)
+    def wrapped(x):
+        print('-> ', fn, '(', x, ')' )
 
 
 
