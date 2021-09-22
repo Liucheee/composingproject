@@ -241,6 +241,10 @@ First-Class elements
 ***Function Decorators***
 - 
 
+- Example of Special syntax to apply higher- order functions is decorators
+- This can be seen in trace
+- Trace is defined to return a function that precedes a call to argument with a print statement to output the argument
+- def statement for triple has annotation @trace affects the execution for def 
 
 
 

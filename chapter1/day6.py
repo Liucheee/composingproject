@@ -331,6 +331,17 @@ result = f(12)
 def trace(fn)
     def wrapped(x):
         print('-> ', fn, '(', x, ')' )
+        return fn(x)
+    return wrapped
+
+@trace
+def triple(x):
+    return 3 * x
+
+triple(12)
+# <Function triple at 0x102a39848> ( 12 )
+#36
+
 
 
 
