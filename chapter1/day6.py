@@ -343,6 +343,12 @@ triple(12)
 #36
 
 
+#Triple Example
+def triple(x):
+    return 3 * x
+
+triple = trace(triple)
+
 
 
 
