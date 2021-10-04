@@ -6,7 +6,7 @@
 >>> 18117 // 10
 1811
 
-#Example 2
+#Example sum_digits
 Def sum_digits(n):
     """Return the sum of the digits of positive integer n."""
     if n < 10:
