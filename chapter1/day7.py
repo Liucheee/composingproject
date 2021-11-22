@@ -16,10 +16,29 @@ Def sum_digits(n):
         return sum_digits(all_but_last) + last
 
 
+#Recursive using while statement
+#iterative
+def fact_iter(n):
+    total, k = 1, 1
+    while k <= n:
+        total,, k = total * k, k + 1
+    return total
+
+fact_iter(4)
+24
 
 
+#recursive
+def fact(n)
+    if n ==1:
+        return 1
+    else:
+        return n * fact(n-1)
+    
+fact(4)
 
 
+### 1.7.2
 
 
 
